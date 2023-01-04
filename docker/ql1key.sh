@@ -48,7 +48,7 @@ version: '2'
 services:
   qinglong:
     image: whyour/qinglong:2.11.3
-    container_name: qinglong
+    container_name: qinglong2
     volumes:
       - ./data/config:/ql/config
       - ./data/log:/ql/log
@@ -56,7 +56,7 @@ services:
       - ./data/scripts:/ql/scripts
       - ./data/repo:/ql/repo
     ports:
-      - "0.0.0.0:5500:5700"
+      - "0.0.0.0:5511:5700"
     networks:
       - net
     environment:
